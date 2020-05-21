@@ -2,4 +2,4 @@
 
 ## Garello, Lautaro.    
 
-Para probarlo (click aquí)[https://garellolautaro.github.io/PARCIAL-1_LPPA/.]
+Para probarlo [click aquí](https://garellolautaro.github.io/PARCIAL-1_LPPA/.)
