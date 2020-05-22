@@ -5,76 +5,76 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Form_P1_LPPA</title>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/reset.css">
         <script src="./js/operations.js"></script>
     </head>
     <body>
-        <form action="" class="frm">
-            <!-- Title-->
-            <h1 class="formTitulo">Formulario:</h1>
+        <div class="container">
+            <form action="" class="frm">
+                <!-- Title-->
+                <h1 class="formTitulo">Formulario:</h1>
 
-            <!-- TextBox-->
-            <label for="" class="frmInput">Nombre</label><br>
-            <input type="text" class="formInput">
-            <br>
-            <label for="" class="frmInput">Apellido</label><br>
-            <input type="text" class="formInput">
-            <br>
-            <label for="" class="frmInput">Email</label><br>
-            <input type="text" class="formInput" placeholder="correoejemplo@dirección.com">
-            <br>
-            <label for="" class="frmInput">Edad</label><br>
-            <input type="text" class="formInput">
-            <br>
-
-            <!-- RadioButton-->
-            <br>
-            <form action="">
-                <label for="edad">Sexo:</label>
+                <!-- TextBox-->
+                <label for="" class="frmLabel">Nombre</label><br>
+                <input type="text" class="formInput">
                 <br>
-                <input type="radio" class="formInput">
-                <label for="male">Masculino</label><br>
-                <input type="radio" class="formInput">
-                <label for="female">Femenino</label><br>
-                <input type="radio" class="formInput">
-                <label for="other">Otro</label>
-            </form>
-
-            <!-- CheckBox-->
-            <br>
-            <form>
-                <label for="">Tema de interes:</label>
+                <label for="" class="frmLabel">Apellido</label><br>
+                <input type="text" class="formInput">
                 <br>
-                <input type="checkbox" class="formInput">
-                <label for=""> Musica</label><br>
-                <input type="checkbox" class="formInput">
-                <label for=""> Deportes</label><br>
-                <input type="checkbox" class="formInput">
-                <label for=""> Juegos</label><br>
-                <input type="checkbox" class="formInput">
-                <label for=""> Tecnologia</label><br><br>
+                <label for="" class="frmLabel">Email</label><br>
+                <input type="text" class="formInput" placeholder="correoejemplo@dirección.com">
+                <br>
+                <label for="" class="frmLabel">Edad</label><br>
+                <input type="text" class="formInput">
+                <br>
+
+                <!-- RadioButton-->
+                <br>
+                <form action="">
+                    <label for="edad" class="frmLabel">Sexo:</label>
+                    <br>
+                    <input type="radio" class="formInput">
+                    <label for="male" class="frmLabel">Masculino</label><br>
+                    <input type="radio" class="formInput">
+                    <label for="female" class="frmLabel">Femenino</label><br>
+                    <input type="radio" class="formInput">
+                    <label for="other" class="frmLabel">Otro</label><br>
+
+                    <!-- CheckBox-->
+                    <br>
+                    <label for="" class="frmLabel">Tema de interes:</label>
+                    <br>
+                    <input type="checkbox" class="formInput">
+                    <label for="" class="frmLabel"> Musica</label><br>
+                    <input type="checkbox" class="formInput">
+                    <label for="" class="frmLabel"> Deportes</label><br>
+                    <input type="checkbox" class="formInput">
+                    <label for="" class="frmLabel"> Juegos</label><br>
+                    <input type="checkbox" class="formInput">
+                    <label for="" class="frmLabel"> Tecnologia</label><br><br>
+
+                    <!-- ComboBox-->
+                    <label for="" class="frmLabel">País</label>
+                    <select class="formInput">
+                        <option value="" disabled selected>Seleccione un País</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Brazil">Brasil</option>
+                        <option value="Uruguay">Uruguay</option>
+                    </select>
+                    <br>
+
+                    <!-- Message-->
+                    <br>
+                    <label for="" class="frmLabel">Comentarios:</label>
+                    <textarea class="formInput" rows="2" cols="52"></textarea>
+                    <br>
+                    <br>
+                    <input type="submit" class="frmSubmit"></input>
+                </form>
             </form>
-
-            <!-- ComboBox-->
-            <label for="">País</label><br>
-            <select class="formInput">
-                <option value="" disabled selected>Seleccione un País</option>
-                <option value="Argentina">Argentina</option>
-                <option value="Chile">Chile</option>
-                <option value="Brazil">Brasil</option>
-                <option value="Uruguay">Uruguay</option>
-            </select>
-            <br>
-
-            <!-- Message-->
-            <br>
-            <label for="">Comentarios:</label><br>
-            <textarea class="formInput" rows="1" cols="20"></textarea>
-            <br>
-            <br>
-            <button type="submit">Enviar</button>
-
-        </form>
+        </div>
     </body>
 </html>
