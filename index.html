@@ -4,9 +4,74 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Formulario</title>
+        <title>Form_P1_LPPA</title>
     </head>
     <body>
+        <form action="" class="frm">
+            <!-- Title-->
+            <h1 class="formTitulo">Formulario:</h1>
 
+            <!-- TextBox-->
+            <label for="" class="frmInput">Nombre</label><br>
+            <input type="text" class="formInput">
+            <br>
+            <label for="" class="frmInput">Apellido</label><br>
+            <input type="text" class="formInput">
+            <br>
+            <label for="" class="frmInput">Email</label><br>
+            <input type="text" class="formInput" placeholder="correoejemplo@dirección.com">
+            <br>
+            <label for="" class="frmInput">Edad</label><br>
+            <input type="text" class="formInput">
+            <br>
+
+            <!-- RadioButton-->
+            <br>
+            <form action="">
+                <label for="edad">Sexo:</label>
+                <br>
+                <input type="radio" class="formInput">
+                <label for="male">Masculino</label><br>
+                <input type="radio" class="formInput">
+                <label for="female">Femenino</label><br>
+                <input type="radio" class="formInput">
+                <label for="other">Otro</label>
+            </form>
+
+            <!-- CheckBox-->
+            <br>
+            <form>
+                <label for="">Tema de interes:</label>
+                <br>
+                <input type="checkbox" class="formInput">
+                <label for="musica"> Musica</label><br>
+                <input type="checkbox" class="formInput">
+                <label for="deportes"> Deportes</label><br>
+                <input type="checkbox" class="formInput">
+                <label for="juegos"> Juegos</label><br>
+                <input type="checkbox" class="formInput">
+                <label for="tecnologia"> Tecnologia</label><br><br>
+            </form>
+
+            <!-- ComboBox-->
+            <label for="">País</label><br>
+            <select class="formInput">
+                <option value="" disabled selected>Seleccione un País</option>
+                <option value="argentina">Argentina</option>
+                <option value="chile">Chile</option>
+                <option value="brazil">Brasil</option>
+                <option value="Uruguay">Uruguay</option>
+            </select>
+            <br>
+
+            <!-- Message-->
+            <br>
+            <label for="">Comentarios:</label><br>
+            <textarea class="formInput" rows="1" cols="20"></textarea>
+            <br>
+            <br>
+            <button type="submit">Enviar</button>
+
+        </form>
     </body>
 </html>
