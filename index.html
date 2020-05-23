@@ -8,60 +8,60 @@
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./CSS/style.css">
         <link rel="stylesheet" href="./CSS/reset.css">
-        <script src="./JS/operations.js"></script>
     </head>
     <body>
-        <form action="" class="frm">
+        <div id="error"></div>
+        <form action="" id="frm" method="GET">
 
             <!-- Return-->
             <button id="return"><a href="https://github.com/GarelloLautaro/PARCIAL-1_LPPA">Regresar</a></button>
-            <div class="space"></div>
+            <div id="space"></div>
 
             <!-- Title-->
-            <h1 class="formTitulo">Formulario:</h1>
+            <h1 id="formTitulo">Formulario:</h1>
 
             <!-- TextBox-->
-            <label for="" class="frmLabel">Nombre</label><br>
-            <input type="text" class="formInput">
+            <label for="name">Nombre</label><br>
+            <input type="text" id="name" name="name" required>
             <br>
-            <label for="" class="frmLabel">Apellido</label><br>
-            <input type="text" class="formInput">
+            <label for="surname">Apellido</label><br>
+            <input type="text" id="surname" name="surname" required>
             <br>
-            <label for="" class="frmLabel">Email</label><br>
-            <input type="text" class="formInput" placeholder="correoejemplo@dirección.com">
+            <label for="email">Email</label><br>
+            <input type="text" id="email" name="email" placeholder="correoejemplo@dirección.com" required>
             <br>
-            <label for="" class="frmLabel">Edad</label><br>
-            <input type="text" class="formInput">
+            <label for="age">Edad</label><br>
+            <input type="text" id="age" name="age" required>
             <br>
 
             <!-- RadioButton-->
             <br>
             <form action="">
-                <label for="edad" class="frmLabel">Sexo:</label>
+                <label for="sex">Sexo:</label>
                 <br>
-                <input type="radio" class="formInput">
-                <label for="male" class="frmLabel">Masculino</label><br>
-                <input type="radio" class="formInput">
-                <label for="female" class="frmLabel">Femenino</label><br>
-                <input type="radio" class="formInput">
-                <label for="other" class="frmLabel">Otro</label><br>
+                <input type="radio" id="sex">
+                <label for="male">Masculino</label><br>
+                <input type="radio" id="sex">
+                <label for="female">Femenino</label><br>
+                <input type="radio" id="sex">
+                <label for="other">Otro</label><br>
 
                 <!-- CheckBox-->
                 <br>
-                <label for="" class="frmLabel">Tema de interes:</label>
+                <label for="">Tema de interes:</label>
                 <br>
-                <input type="checkbox" class="formInput">
-                <label for="" class="frmLabel"> Musica</label><br>
-                <input type="checkbox" class="formInput">
-                <label for="" class="frmLabel"> Deportes</label><br>
-                <input type="checkbox" class="formInput">
-                <label for="" class="frmLabel"> Juegos</label><br>
-                <input type="checkbox" class="formInput">
-                <label for="" class="frmLabel"> Tecnologia</label><br><br>
+                <input type="checkbox" id="interest">
+                <label for=""> Musica</label><br>
+                <input type="checkbox" id="interest">
+                <label for=""> Deportes</label><br>
+                <input type="checkbox" id="interest">
+                <label for=""> Juegos</label><br>
+                <input type="checkbox" id="interest">
+                <label for=""> Tecnologia</label><br><br>
 
                 <!-- ComboBox-->
-                <label for="" class="frmLabel">País</label>
-                <select class="formInput">
+                <label for="">País</label>
+                <select id="country">
                     <option value="" disabled selected>Seleccione un País</option>
                     <option value="Argentina">Argentina</option>
                     <option value="Chile">Chile</option>
@@ -72,12 +72,13 @@
 
                 <!-- Message-->
                 <br>
-                <label for="" class="frmLabel">Comentarios:</label>
-                <textarea class="formInput" rows="2" cols="52"></textarea>
+                <label for="">Comentarios:</label>
+                <textarea id="comment" rows="2" cols="52"></textarea>
                 <br>
                 <br>
-                <input type="submit" class="frmSubmit"></input>
+                <button type="submit" id="submit">Enviar</button>
             </form>
         </form>
+        <script src="./JS/operations.js"></script>
     </body>
 </html>
