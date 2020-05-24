@@ -1,7 +1,12 @@
+form = document.getElementById('frm')
 username = document.getElementById('name')
+userNameError = document.getElementById('nameError')
 surname = document.getElementById('surname')
+surnameError = document.getElementById('surnameError')
 email = document.getElementById('email')
+emailError = document.getElementById('emailError')
 age = document.getElementById('age')
+ageError = document.getElementById('ageError')
 man = document.getElementById("male")
 woman = document.getElementById("female")
 other = document.getElementById("other")
@@ -15,6 +20,8 @@ brasil = document.getElementById('brasil')
 chile = document.getElementById('chile')
 uruguay = document.getElementById('uruguay')
 comments = document.getElementById('comment')
+
+
 
 function sendForm() {
     console.log('Nombre:' + username.value)
@@ -42,7 +49,6 @@ function sendForm() {
     if (technology.checked === true) {
         console.log('Temas de interes: Tecnologia')
     }
-
 
     console.log('Comentarios: ' + comments.value)
 

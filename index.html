@@ -18,38 +18,35 @@
             <div id="space"></div>
 
             <!-- Title-->
-            <h1 id="formTitulo">Formulario:</h1>
+            <h1 id="formTitulo">Formulario</h1>
 
             <!-- TextBox-->
-            <label for="name">Nombre</label><br>
+            <label for="name">Nombre</label>
             <input type="text" id="name" name="name">
-            <p id="validation_name" class="validation"> Error </p>
-            <label for="surname">Apellido</label><br>
+            <p id="usernameError" class="error"></p>
+            <label for="surname">Apellido</label>
             <input type="text" id="surname" name="surname">
-            <br>
-            <label for="email">Email</label><br>
+            <p id="surnameError" class="error"></p>
+            <label for="email">Email</label>
             <input type="text" id="email" name="email" placeholder="correoejemplo@dirección.com">
-            <br>
-            <label for="age">Edad</label><br>
+            <p id="emailError" class="error"></p>
+            <label for="age">Edad</label>
             <input type="text" id="age" name="age">
-            <br>
+            <p id="ageError" class="error"></p>
 
             <!-- RadioButton-->
-            <br>
 
-            <label for="sex">Sexo:</label>
-            <br>
+            <label for="sex">Sexo:</label><br>
             <input type="radio" id="male">
             <label for="">Masculino</label><br>
             <input type="radio" id="female">
             <label for="">Femenino</label><br>
             <input type="radio" id="other">
-            <label for="">Otro</label><br>
+            <label for="">Otro</label>
+            <p class="error" id="sexError"></p>
 
             <!-- CheckBox-->
-            <br>
-            <label for="">Tema de interes:</label>
-            <br>
+            <label for="">Tema de interes:</label><br>
             <input type="checkbox" id="music">
             <label for=""> Musica</label><br>
             <input type="checkbox" id="sports">
@@ -57,7 +54,8 @@
             <input type="checkbox" id="games">
             <label for=""> Juegos</label><br>
             <input type="checkbox" id="technology">
-            <label for=""> Tecnologia</label><br><br>
+            <label for=""> Tecnologia</label>
+            <p class="error" id="interestError"></p>
 
             <!-- ComboBox-->
             <label for="">País</label>
@@ -68,14 +66,12 @@
                 <option value="Brazil">Brasil</option>
                 <option value="Uruguay">Uruguay</option>
             </select>
-            <br>
+            <p class="error" id="countryError"></p>
 
             <!-- Message-->
-            <br>
             <label for="">Comentarios:</label>
             <textarea id="comment" rows="2" cols="52"></textarea>
-            <br>
-            <br>
+            <p class="error" id="commentsError"></p>
             <button type="submit" id="submit" onclick='return sendForm();'>Enviar</button>
         </form>
         <script src="./JS/operations.js"></script>
