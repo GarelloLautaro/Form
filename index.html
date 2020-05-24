@@ -5,12 +5,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Form_P1_LPPA</title>
+        <link rel="stylesheet" href="./CSS/reset.css">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./CSS/style.css">
-        <link rel="stylesheet" href="./CSS/reset.css">
+
     </head>
     <body>
-        <div id="error"></div>
         <form action="" id="frm" method="GET">
 
             <!-- Return-->
@@ -22,62 +22,61 @@
 
             <!-- TextBox-->
             <label for="name">Nombre</label><br>
-            <input type="text" id="name" name="name" required>
-            <br>
+            <input type="text" id="name" name="name">
+            <p id="validation_name" class="validation"> Error </p>
             <label for="surname">Apellido</label><br>
-            <input type="text" id="surname" name="surname" required>
+            <input type="text" id="surname" name="surname">
             <br>
             <label for="email">Email</label><br>
-            <input type="text" id="email" name="email" placeholder="correoejemplo@dirección.com" required>
+            <input type="text" id="email" name="email" placeholder="correoejemplo@dirección.com">
             <br>
             <label for="age">Edad</label><br>
-            <input type="text" id="age" name="age" required>
+            <input type="text" id="age" name="age">
             <br>
 
             <!-- RadioButton-->
             <br>
-            <form action="">
-                <label for="sex">Sexo:</label>
-                <br>
-                <input type="radio" id="sex">
-                <label for="male">Masculino</label><br>
-                <input type="radio" id="sex">
-                <label for="female">Femenino</label><br>
-                <input type="radio" id="sex">
-                <label for="other">Otro</label><br>
 
-                <!-- CheckBox-->
-                <br>
-                <label for="">Tema de interes:</label>
-                <br>
-                <input type="checkbox" id="interest">
-                <label for=""> Musica</label><br>
-                <input type="checkbox" id="interest">
-                <label for=""> Deportes</label><br>
-                <input type="checkbox" id="interest">
-                <label for=""> Juegos</label><br>
-                <input type="checkbox" id="interest">
-                <label for=""> Tecnologia</label><br><br>
+            <label for="sex">Sexo:</label>
+            <br>
+            <input type="radio" id="male">
+            <label for="">Masculino</label><br>
+            <input type="radio" id="female">
+            <label for="">Femenino</label><br>
+            <input type="radio" id="other">
+            <label for="">Otro</label><br>
 
-                <!-- ComboBox-->
-                <label for="">País</label>
-                <select id="country">
-                    <option value="" disabled selected>Seleccione un País</option>
-                    <option value="Argentina">Argentina</option>
-                    <option value="Chile">Chile</option>
-                    <option value="Brazil">Brasil</option>
-                    <option value="Uruguay">Uruguay</option>
-                </select>
-                <br>
+            <!-- CheckBox-->
+            <br>
+            <label for="">Tema de interes:</label>
+            <br>
+            <input type="checkbox" id="music">
+            <label for=""> Musica</label><br>
+            <input type="checkbox" id="sports">
+            <label for=""> Deportes</label><br>
+            <input type="checkbox" id="games">
+            <label for=""> Juegos</label><br>
+            <input type="checkbox" id="technology">
+            <label for=""> Tecnologia</label><br><br>
 
-                <!-- Message-->
-                <br>
-                <label for="">Comentarios:</label>
-                <textarea id="comment" rows="2" cols="52"></textarea>
-                <br>
-                <br>
-                <button type="submit" id="submit">Enviar</button>
-            </form>
+            <!-- ComboBox-->
+            <label for="">País</label>
+            <select id="country">
+                <option value="base">Seleccione un País</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Chile">Chile</option>
+                <option value="Brazil">Brasil</option>
+                <option value="Uruguay">Uruguay</option>
+            </select>
+            <br>
+
+            <!-- Message-->
+            <br>
+            <label for="">Comentarios:</label>
+            <textarea id="comment" rows="2" cols="52"></textarea>
+            <br>
+            <br>
+            <button type="submit" id="submit" onclick='return sendForm();'>Enviar</button>
         </form>
         <script src="./JS/operations.js"></script>
     </body>
