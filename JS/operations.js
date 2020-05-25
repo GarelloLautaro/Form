@@ -9,7 +9,7 @@ const age = document.getElementById("age")
 const ageError = document.getElementById("ageError")
 const man = document.getElementById("male")
 const woman = document.getElementById("female")
-const other = document.getElementById("other")
+const other = document.getElementById("other")                  /* Creation of constants */
 const sexError = document.getElementById("sexError")
 const music = document.getElementById("music")
 const sports = document.getElementById("sports")
@@ -27,65 +27,65 @@ const comments = document.getElementById('comment')
 const commentsError = document.getElementById('commentsError')
 
 
-form.addEventListener("submit", e => {
-    e.preventDefault()
+form.addEventListener("submit", e => { /* I tell the form that when it "hears" the submit it creates an event */
+    e.preventDefault() /* Here I prevent everything that comes by default */
     let warnings_user = ""
     let warnings_surname = ""
     let warnings_email = ""
-    let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
+    let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/ /* Here i declare the regular expressions of the email */
     let warnings_age = ""
     let warnings_sex = ""
     let warnings_interest = ""
     let warnings_country = ""
     let warnings_comments = ""
-    let entrar = false
+    let entrar = false  /* I create a Boolean variable so I can differentiate which fields do not pass the validation rules and drop only the corresponding warnings   */
 
 
     usernameError.innerHTML = ""
-    if (username.value.length < 3) {
+    if (username.value.length < 3 || username.value.length > 30) {/* Name validation */
         warnings_user += 'El nombre no es valido'
         entrar = true
     }
 
     surnameError.innerHTML = ""
-    if (surname.value.length < 3) {
+    if (surname.value.length < 3 || surname.value.length > 30) {/* Surname validation */
         warnings_surname += 'El apellido no es valido'
         entrar = true
     }
 
     emailError.innerHTML = ""
-    if (!regexEmail.test(email.value)) {
+    if (!regexEmail.test(email.value)) {/* Email validation */
         warnings_email += 'Ingrese un email valido, por ej: correoejemplo@dirección.com '
         entrar = true
     }
 
     ageError.innerHTML = ""
-    if (isNaN(age.value) || age.value < 1 || age.value > 99) {
+    if (isNaN(age.value) || age.value < 1 || age.value > 99) {/* Age validation */
         warnings_age += 'La edad no es valida'
         entrar = true
     }
 
-    if (man.checked === false && woman.checked === false && other.checked === false) {
+    if (man.checked === false && woman.checked === false && other.checked === false) {/* Sex validation */
         warnings_sex += 'Seleccione un sexo'
         entrar = true
     }
 
-    if (music.checked === false && sports.checked === false && games.checked === false && technology.checked === false) {
+    if (music.checked === false && sports.checked === false && games.checked === false && technology.checked === false) {/* Area of interest validation */
         warnings_interest += 'Seleccione un tema de interes'
         entrar = true
     }
 
-    if (base.selected === true) {
+    if (base.selected === true) {/* Country validation */
         warnings_country += 'Seleccione un país'
     }
 
     commentsError.innerHTML = ""
-    if (comments.value.length < 20) {
+    if (comments.value.length < 20) {/* Comments validation */
         warnings_comments += 'Ingrese un mensaje más largo'
         entrar = true
     }
 
-    if (entrar) {
+    if (entrar) { /* All fields are checked for compliance with validation standards. If not, run the alert */
         usernameError.innerHTML = warnings_user
         surnameError.innerHTML = warnings_surname
         emailError.innerHTML = warnings_email
@@ -94,7 +94,7 @@ form.addEventListener("submit", e => {
         interestError.innerHTML = warnings_interest
         countryError.innerHTML = warnings_country
         commentsError.innerHTML = warnings_comments
-    } else {
+    } else { /* If everyone complies with the rules, the alert changes to "Enviado" and all data is written to the console */
         usernameError.innerHTML = "Enviado"
         console.log('Nombre: ' + username.value)
         surnameError.innerHTML = "Enviado"
