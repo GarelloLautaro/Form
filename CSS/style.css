@@ -7,6 +7,20 @@ body {
     background: -webkit-linear-gradient(to right, rgb(209, 109, 212), rgb(83, 123, 255));
     background: linear-gradient(to right, rgb(209, 109, 212), rgb(83, 123, 255));
 }
+#frm {
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    height: 890px;
+    bottom: 20px;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    position: relative;
+    background-color: rgb(234, 234, 234);
+    border-radius: 10px 10px 10px 10px;
+}
+
 
 #return {
     border-radius: 5px 5px 5px 5px;
@@ -15,7 +29,6 @@ body {
     cursor: pointer;
     background: #95ddfc;
 }
-
 #space {
     width: 100%;
     height: 20px;
@@ -24,23 +37,12 @@ body {
     border-radius: 5px 5px 5px 5px;
 }
 
+
 h1{
     text-align: center;
     font-weight: 700;
 }
 
-
-#frm {
-    width: 500px;
-    max-width: 100%;
-    margin: auto;
-    margin-top: 30px;
-    padding: 20px;
-    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
-    position: relative;
-    background-color: rgb(234, 234, 234);
-    border-radius: 10px 10px 10px 10px;
-}
 
 .textbox {
     position: relative;
@@ -48,7 +50,6 @@ h1{
     height: 80px;
     right: 6px;
 }
-
 input[type="text"] {
     background: none;
     color: black;
@@ -62,26 +63,13 @@ input[type="text"] {
 input[type="text"]:hover {
     background-color: white;
 }
-
-#submit{
-    font-family: 'Cabin', sans-serif;
-    width: 40%;
-    height: 40px;
-    background: #B06AB3;
-    color: black;
-    border-radius: 20px 20px 20px 20px;
-    float: right;
-}
-#submit:hover{
-    cursor: pointer;
-}
-
 .textboxerror {
     font-size: 16px;
     position: relative;
     bottom: 39px;
     left: 5px;
 }
+
 
 .radioerror{
     font-size: 16px;
@@ -96,16 +84,18 @@ input[type="text"]:hover {
     background-color: rgb(209, 109, 212);
 }
 .radioerror::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 355px;
-  width: 0;
-  height: 0;
-  border-top: 20px solid transparent;
-  border-right: 20px solid rgb(209, 109, 212);
-  border-bottom: 20px solid transparent;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 355px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-right: 20px solid rgb(209, 109, 212);
+    border-bottom: 20px solid transparent;
 }
+
+
 .checkederror{
     font-size: 16px;
     position: relative;
@@ -119,14 +109,63 @@ input[type="text"]:hover {
     background-color: rgb(209, 109, 212);
 }
 .checkederror::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 355px;
-  width: 0;
-  height: 0;
-  border-top: 25px solid transparent;
-  border-right: 25px solid rgb(209, 109, 212);
-  border-bottom: 25px solid transparent;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 355px;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-right: 25px solid rgb(209, 109, 212);
+    border-bottom: 25px solid transparent;
 }
 
+
+.comboerror {
+    font-size: 16px;
+    position: relative;
+    left: 212px;
+    bottom: 25px;
+    width: 280px;
+    height: 15px;
+    padding: 10px 8px 5px 5px;
+    margin: 0 0 4px 30px;
+    margin-left: 15px;
+    background-color: rgb(209, 109, 212);
+}
+.comboerror::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 293px;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-right: 15px solid rgb(209, 109, 212);
+    border-bottom: 15px solid transparent;
+}
+
+
+.labelerror {
+    font-size: 16px;
+    position: relative;
+    bottom: 70px;
+    left: 4px;
+}
+
+
+#submit {
+    font-family: 'Cabin', sans-serif;
+    width: 40%;
+    height: 40px;
+    background: #B06AB3;
+    color: black;
+    border-radius: 20px 20px 20px 20px;
+    float: right;
+}
+#submit:hover {
+    cursor: pointer;
+}
+.btn {
+    
+}

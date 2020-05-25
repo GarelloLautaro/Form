@@ -80,15 +80,18 @@
                     <option id="brasil" value="Brazil">Brasil</option>
                     <option id="uruguay" value="Uruguay">Uruguay</option>
                 </select>
-                <p class="errorcountry" id="countryError"></p>
+                <p class="comboerror" id="countryError"></p>
             </div>
 
             <!-- Message-->
-            <label for="">Comentarios:</label><br>
-            <textarea id="comment" rows="3" cols="60"></textarea>
-            <p class="error" id="commentsError"></p>
-            <button type="submit" id="submit">Enviar</button>
-            <button type="" id="refresh"></button>
+            <div>
+                <label for="">Comentarios:</label><br>
+                <textarea id="comment" rows="3" cols="60"></textarea>
+                <p class="labelerror" id="commentsError"></p>
+            </div>
+            <div class="btn">
+                <button type="submit" id="submit">Enviar</button>
+            </div>
         </form>
         <script src="./JS/operations.js"></script>
     </body>
