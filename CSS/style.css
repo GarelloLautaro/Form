@@ -8,27 +8,25 @@ body {
     background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
     background: linear-gradient(to right, #B06AB3, #4568DC);
 }
-h1{
-    text-align: center;
-    font-weight: 700;
-}
+
 #return {
     border-radius: 5px 5px 5px 5px;
 }
 #return:hover {
     cursor: pointer;
-    background-color: #2DC2BD;
+    background: #95ddfc;
 }
+
 #space {
     width: 100%;
     height: 20px;
-    background-color: #37c0fb;
+    background-color: #95ddfc;
     border-radius: 5px 5px 5px 5px;
 }
-.error {
-    width: 100%;
-    font-size: 10px;
-    color: black;
+
+h1{
+    text-align: center;
+    font-weight: 700;
 }
 
 
@@ -38,29 +36,40 @@ h1{
     margin: auto;
     margin-top: 30px;
     padding: 20px;
-    box-shadow: 0 0 100px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
     position: relative;
     background-color: rgb(234, 234, 234);
-}
-
-#submit{
-    width: 99%;
+    border-radius: 10px 10px 10px 10px;
 }
 
 input[type="text"] {
     background: none;
-    color: #c6c6c6;
+    color: black;
     font-size: 18px;
     padding: 5px 5px 5px 5px;
     display: block;
     width: 100%;
     border: none;
-    border-bottom: 1px solid var(--colorTextos);
+    border-bottom: 1px solid
 }
 input[type="text"]:hover {
-    cursor: pointer;
     background-color: white;
 }
 
+#submit{
+    font-family: 'roboto';
+    width: 99%;
+    background: #4568DC;
+    background: -webkit-linear-gradient(to right, #4568DC, #B06AB3);
+    background: linear-gradient(to right, #4568DC, #B06AB3);
+    color: white;
+}
+#submit:hover{
+    cursor: pointer;
+}
 
-
+.error {
+    width: 100%;
+    font-size: 10px;
+    color: black;
+}

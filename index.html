@@ -7,6 +7,7 @@
         <title>Form_P1_LPPA</title>
         <link rel="stylesheet" href="./CSS/reset.css">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./CSS/style.css">
 
     </head>
@@ -60,11 +61,11 @@
             <!-- ComboBox-->
             <label for="">País</label>
             <select id="country">
-                <option value="base">Seleccione un País</option>
-                <option value="Argentina">Argentina</option>
-                <option value="Chile">Chile</option>
-                <option value="Brazil">Brasil</option>
-                <option value="Uruguay">Uruguay</option>
+                <option id="base" value="base">Seleccione un País</option>
+                <option id="argentina" value="Argentina">Argentina</option>
+                <option id="chile" value="Chile">Chile</option>
+                <option id="brasil" value="Brazil">Brasil</option>
+                <option id="uruguay" value="Uruguay">Uruguay</option>
             </select>
             <p class="error" id="countryError"></p>
 
@@ -72,7 +73,7 @@
             <label for="">Comentarios:</label>
             <textarea id="comment" rows="2" cols="52"></textarea>
             <p class="error" id="commentsError"></p>
-            <button type="submit" id="submit" onclick='return sendForm();'>Enviar</button>
+            <button type="submit" id="submit">Enviar</button>
         </form>
         <script src="./JS/operations.js"></script>
     </body>
