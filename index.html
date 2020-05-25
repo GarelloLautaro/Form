@@ -7,7 +7,8 @@
         <title>Form_P1_LPPA</title>
         <link rel="stylesheet" href="./CSS/reset.css">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Questrial&display=swap"
+            rel="stylesheet">
         <link rel="stylesheet" href="./CSS/style.css">
 
     </head>
@@ -22,58 +23,72 @@
             <h1 id="formTitulo">Formulario</h1>
 
             <!-- TextBox-->
-            <label for="name">Nombre</label>
-            <input type="text" id="name" name="name">
-            <p id="usernameError" class="error"></p>
-            <label for="surname">Apellido</label>
-            <input type="text" id="surname" name="surname">
-            <p id="surnameError" class="error"></p>
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email" placeholder="correoejemplo@dirección.com">
-            <p id="emailError" class="error"></p>
-            <label for="age">Edad</label>
-            <input type="text" id="age" name="age">
-            <p id="ageError" class="error"></p>
+            <div class="textbox" id="textboxerror">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name">
+                <p id="usernameError" class="textboxerror"></p>
+            </div>
+            <div class="textbox" id="textboxerror">
+                <label for="surname">Apellido</label>
+                <input type="text" id="surname" name="surname">
+                <p id="surnameError" class="textboxerror"></p>
+            </div>
+            <div class="textbox" id="textboxerror">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email">
+                <p id="emailError" class="textboxerror"></p>
+            </div>
+            <div class="textbox" id="textboxerror">
+                <label for="age">Edad</label>
+                <input type="text" id="age" name="age">
+                <p id="ageError" class="textboxerror"></p>
+            </div>
 
             <!-- RadioButton-->
-
-            <label for="sex">Sexo:</label><br>
-            <input type="radio" id="male">
-            <label for="">Masculino</label><br>
-            <input type="radio" id="female">
-            <label for="">Femenino</label><br>
-            <input type="radio" id="other">
-            <label for="">Otro</label>
-            <p class="error" id="sexError"></p>
+            <div>
+                <label for="sex">Sexo:</label><br>
+                <input type="radio" id="male">
+                <label for="">Masculino</label><br>
+                <input type="radio" id="female">
+                <label for="">Femenino</label><br>
+                <input type="radio" id="other">
+                <label for="">Otro</label>
+                <p class="radioerror" id="sexError"></p>
+            </div>
 
             <!-- CheckBox-->
-            <label for="">Tema de interes:</label><br>
-            <input type="checkbox" id="music">
-            <label for=""> Musica</label><br>
-            <input type="checkbox" id="sports">
-            <label for=""> Deportes</label><br>
-            <input type="checkbox" id="games">
-            <label for=""> Juegos</label><br>
-            <input type="checkbox" id="technology">
-            <label for=""> Tecnologia</label>
-            <p class="error" id="interestError"></p>
+            <div>
+                <label for="">Tema de interes:</label><br>
+                <input type="checkbox" id="music">
+                <label for=""> Musica</label><br>
+                <input type="checkbox" id="sports">
+                <label for=""> Deportes</label><br>
+                <input type="checkbox" id="games">
+                <label for=""> Juegos</label><br>
+                <input type="checkbox" id="technology">
+                <label for=""> Tecnologia</label>
+                <p class="checkederror" id="interestError"></p>
+            </div>
 
             <!-- ComboBox-->
-            <label for="">País</label>
-            <select id="country">
-                <option id="base" value="base">Seleccione un País</option>
-                <option id="argentina" value="Argentina">Argentina</option>
-                <option id="chile" value="Chile">Chile</option>
-                <option id="brasil" value="Brazil">Brasil</option>
-                <option id="uruguay" value="Uruguay">Uruguay</option>
-            </select>
-            <p class="error" id="countryError"></p>
+            <div>
+                <label for="">País</label>
+                <select id="country">
+                    <option id="base" value="base">Seleccione un País</option>
+                    <option id="argentina" value="Argentina">Argentina</option>
+                    <option id="chile" value="Chile">Chile</option>
+                    <option id="brasil" value="Brazil">Brasil</option>
+                    <option id="uruguay" value="Uruguay">Uruguay</option>
+                </select>
+                <p class="errorcountry" id="countryError"></p>
+            </div>
 
             <!-- Message-->
-            <label for="">Comentarios:</label>
-            <textarea id="comment" rows="2" cols="52"></textarea>
+            <label for="">Comentarios:</label><br>
+            <textarea id="comment" rows="3" cols="60"></textarea>
             <p class="error" id="commentsError"></p>
             <button type="submit" id="submit">Enviar</button>
+            <button type="" id="refresh"></button>
         </form>
         <script src="./JS/operations.js"></script>
     </body>

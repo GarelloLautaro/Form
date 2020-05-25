@@ -27,7 +27,6 @@ const comments = document.getElementById('comment')
 const commentsError = document.getElementById('commentsError')
 
 
-
 form.addEventListener("submit", e => {
     e.preventDefault()
     let warnings_user = ""
@@ -56,7 +55,7 @@ form.addEventListener("submit", e => {
 
     emailError.innerHTML = ""
     if (!regexEmail.test(email.value)) {
-        warnings_email += 'El email no es valido'
+        warnings_email += 'Ingrese un email valido, por ej: correoejemplo@dirección.com '
         entrar = true
     }
 
