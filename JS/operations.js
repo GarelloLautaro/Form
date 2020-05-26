@@ -55,7 +55,7 @@ form.addEventListener("submit", e => { /* I tell the form that when it "hears" t
 
     emailError.innerHTML = ""
     if (!regexEmail.test(email.value)) {/* Email validation */
-        warnings_email += 'Ingrese un email valido, por ej: correoejemplo@dirección.com '
+        warnings_email += 'Ingrese un email valido'
         entrar = true
     }
 
@@ -87,13 +87,21 @@ form.addEventListener("submit", e => { /* I tell the form that when it "hears" t
 
     if (entrar) { /* All fields are checked for compliance with validation standards. If not, run the alert */
         usernameError.innerHTML = warnings_user
+        console.log('Ingrese un nombre valido')
         surnameError.innerHTML = warnings_surname
+        console.log('Ingrese un apellido valido')
         emailError.innerHTML = warnings_email
+        console.log('Ingrese un email valido')
         ageError.innerHTML = warnings_age
+        console.log('Ingrese una edad valida')
         sexError.innerHTML = warnings_sex
+        console.log('Ingrese un sexo')
         interestError.innerHTML = warnings_interest
+        console.log('Ingrese un tema de interes')
         countryError.innerHTML = warnings_country
+        console.log('Ingrese un país')
         commentsError.innerHTML = warnings_comments
+        console.log('Ingrese un comentario')
     } else { /* If everyone complies with the rules, the alert changes to "Enviado" and all data is written to the console */
         usernameError.innerHTML = "Enviado"
         console.log('Nombre: ' + username.value)

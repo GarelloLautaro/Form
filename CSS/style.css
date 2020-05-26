@@ -67,7 +67,7 @@ input[type="text"]:hover {
     font-size: 16px;
     position: relative;
     bottom: 39px;
-    left: 5px;
+    left: 335px;
 }
 
 
@@ -149,8 +149,8 @@ input[type="text"]:hover {
 .labelerror {
     font-size: 16px;
     position: relative;
-    bottom: 70px;
-    left: 4px;
+    bottom: 40px;
+    left: 280px;
 }
 
 
@@ -165,7 +165,4 @@ input[type="text"]:hover {
 }
 #submit:hover {
     cursor: pointer;
-}
-.btn {
-    
 }
