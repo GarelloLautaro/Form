@@ -81,7 +81,7 @@ form.addEventListener("submit", e => { /* I tell the form that when it "hears" t
 
     commentsError.innerHTML = ""
     if (comments.value.length < 20) {/* Comments validation */
-        warnings_comments += 'Ingrese un mensaje más largo'
+        warnings_comments += 'Comentarios: Ingrese un mensaje más largo'
         entrar = true
     }
 
@@ -101,7 +101,7 @@ form.addEventListener("submit", e => { /* I tell the form that when it "hears" t
         countryError.innerHTML = warnings_country
         console.log('Ingrese un país')
         commentsError.innerHTML = warnings_comments
-        console.log('Ingrese un comentario')
+        console.log('Ingrese un comentario más largo')
     } else { /* If everyone complies with the rules, the alert changes to "Enviado" and all data is written to the console */
         usernameError.innerHTML = "Enviado"
         console.log('Nombre: ' + username.value)
@@ -145,7 +145,7 @@ form.addEventListener("submit", e => { /* I tell the form that when it "hears" t
         if (uruguay.selected === true) {
             console.log("Pais: Uruguay")
         }
-        commentsError.innerHTML = "Enviado"
+        commentsError.innerHTML = "Comentarios: Enviado"
         console.log('Comentarios: ' + comments.value)
     }
 })

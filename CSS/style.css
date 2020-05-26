@@ -1,13 +1,14 @@
-body {
+.wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    min-width: 100%;
     font-family: 'Questrial', sans-serif;
-    background: #4568DC;
     background: -webkit-linear-gradient(to right, rgb(209, 109, 212), rgb(83, 123, 255));
     background: linear-gradient(to right, rgb(209, 109, 212), rgb(83, 123, 255));
 }
-#frm {
+.frm {
     width: 500px;
     max-width: 100%;
     margin: auto;
@@ -22,14 +23,14 @@ body {
 }
 
 
-#return {
+.return {
     border-radius: 5px 5px 5px 5px;
 }
-#return:hover {
+.return:hover {
     cursor: pointer;
     background: #95ddfc;
 }
-#space {
+.space {
     width: 100%;
     height: 20px;
     background: -webkit-linear-gradient(to right, rgb(158, 106, 179), rgb(69, 140, 220));
@@ -145,24 +146,97 @@ input[type="text"]:hover {
     border-bottom: 15px solid transparent;
 }
 
-
-.labelerror {
-    font-size: 16px;
-    position: relative;
-    bottom: 40px;
-    left: 280px;
-}
-
-
-#submit {
+.submit {
     font-family: 'Cabin', sans-serif;
     width: 40%;
-    height: 40px;
+    height: 40px;  
     background: #B06AB3;
     color: black;
     border-radius: 20px 20px 20px 20px;
     float: right;
 }
-#submit:hover {
+.submit:hover {
     cursor: pointer;
+}
+
+@media (max-width: 580px){
+
+    body {
+        background: #4568DC;
+    }
+
+    .wrapper {
+        height: auto;
+        width: auto;
+    }
+
+    .frm {
+        height: 80%;
+        width: 80%;
+    }
+
+    .radioerror, .checkederror {
+        left: 100px;
+        bottom: 50px;
+        width: 242px;
+        height: 25px;
+        
+    }
+    .radioerror::before {
+        right: 255px;
+    }
+    .checkederror::before {
+        right: 255px;
+        border-top: 20px solid transparent;
+        border-right: 20px solid rgb(209, 109, 212);
+        border-bottom: 20px solid transparent;
+    }
+
+    .comboerror {
+        left: 200px;
+        bottom: 25px;
+        width: 142px;
+        height: 15px;
+    }
+    .comboerror::before {
+        right: 155px;
+    }
+
+    .comment {
+        width: 100%;
+    }
+}
+
+@media (max-width: 440px){
+
+    .wrapper {
+        height: auto;
+        width: auto;
+    }
+
+    .frm {
+        height: 80%;
+        width: 80%;
+    }
+
+    .radioerror, .checkederror {
+        left: 130px;
+        bottom: 50px;
+        width: 150px;
+        height: 25px;
+        
+    }
+    .radioerror::before, .checkederror::before {
+        right: 163px;
+    }
+
+    .comboerror {
+        left: 200px;
+        bottom: 25px;
+        width: 80px;
+        height: 15px;
+    }
+    .comboerror::before {
+        right: 93px;
+    }
 }

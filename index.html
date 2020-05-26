@@ -13,86 +13,89 @@
 
     </head>
     <body>
-        <form action="" id="frm" method="GET">
+        <div class="wrapper">
+            <form action="" class="frm" id="frm" method="GET">
 
-            <!-- Return-->
-            <button id="return"><a href="https://github.com/GarelloLautaro/PARCIAL-1_LPPA">Regresar</a></button>
-            <div id="space"></div>
+                <!-- Return-->
+                <button class="return" id="return"><a
+                        href="https://github.com/GarelloLautaro/PARCIAL-1_LPPA">Regresar</a></button>
+                <div class="space"></div>
 
-            <!-- Title-->
-            <h1 id="formTitulo">Formulario</h1>
+                <!-- Title-->
+                <h1 id="formTitulo">Formulario</h1>
 
-            <!-- TextBox-->
-            <div class="textbox" id="textboxerror">
-                <label for="name">Nombre</label>
-                <input type="text" id="name" name="name">
-                <p id="usernameError" class="textboxerror"></p>
-            </div>
-            <div class="textbox" id="textboxerror">
-                <label for="surname">Apellido</label>
-                <input type="text" id="surname" name="surname">
-                <p id="surnameError" class="textboxerror"></p>
-            </div>
-            <div class="textbox" id="textboxerror">
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" placeholder="correoejemplo@dirección.com ">
-                <p id="emailError" class="textboxerror"></p>
-            </div>
-            <div class="textbox" id="textboxerror">
-                <label for="age">Edad</label>
-                <input type="text" id="age" name="age">
-                <p id="ageError" class="textboxerror"></p>
-            </div>
+                <!-- TextBox-->
+                <div class="textbox" id="textboxerror">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name">
+                    <p id="usernameError" class="textboxerror"></p>
+                </div>
+                <div class="textbox" id="textboxerror">
+                    <label for="surname">Apellido</label>
+                    <input type="text" id="surname" name="surname">
+                    <p id="surnameError" class="textboxerror"></p>
+                </div>
+                <div class="textbox" id="textboxerror">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="correoejemplo@dirección.com ">
+                    <p id="emailError" class="textboxerror"></p>
+                </div>
+                <div class="textbox" id="textboxerror">
+                    <label for="age">Edad</label>
+                    <input type="text" id="age" name="age">
+                    <p id="ageError" class="textboxerror"></p>
+                </div>
 
-            <!-- RadioButton-->
-            <div>
-                <label for="sex">Sexo:</label><br>
-                <input type="radio" id="male" name="sex">
-                <label for="">Masculino</label><br>
-                <input type="radio" id="female" name="sex">
-                <label for="">Femenino</label><br>
-                <input type="radio" id="other" name="sex">
-                <label for="">Otro</label>
-                <p class="radioerror" id="sexError"></p>
-            </div>
+                <!-- RadioButton-->
+                <div>
+                    <label for="sex">Sexo:</label><br>
+                    <input type="radio" id="male" name="sex">
+                    <label for="">Masculino</label><br>
+                    <input type="radio" id="female" name="sex">
+                    <label for="">Femenino</label><br>
+                    <input type="radio" id="other" name="sex">
+                    <label for="">Otro</label>
+                    <p class="radioerror" id="sexError"></p>
+                </div>
 
-            <!-- CheckBox-->
-            <div>
-                <label for="">Tema de interes:</label><br>
-                <input type="checkbox" id="music" name="interest">
-                <label for=""> Musica</label><br>
-                <input type="checkbox" id="sports" name="interest">
-                <label for=""> Deportes</label><br>
-                <input type="checkbox" id="games" name="interest">
-                <label for=""> Juegos</label><br>
-                <input type="checkbox" id="technology" name="interest">
-                <label for=""> Tecnologia</label>
-                <p class="checkederror" id="interestError"></p>
-            </div>
+                <!-- CheckBox-->
+                <div>
+                    <label for="">Tema de interes:</label><br>
+                    <input type="checkbox" id="music" name="interest">
+                    <label for=""> Musica</label><br>
+                    <input type="checkbox" id="sports" name="interest">
+                    <label for=""> Deportes</label><br>
+                    <input type="checkbox" id="games" name="interest">
+                    <label for=""> Juegos</label><br>
+                    <input type="checkbox" id="technology" name="interest">
+                    <label for=""> Tecnologia</label>
+                    <p class="checkederror" id="interestError"></p>
+                </div>
 
-            <!-- ComboBox-->
-            <div>
-                <label for="">País</label>
-                <select id="country">
-                    <option id="base" value="base">Seleccione un País</option>
-                    <option id="argentina" value="Argentina">Argentina</option>
-                    <option id="chile" value="Chile">Chile</option>
-                    <option id="brasil" value="Brazil">Brasil</option>
-                    <option id="uruguay" value="Uruguay">Uruguay</option>
-                </select>
-                <p class="comboerror" id="countryError"></p>
-            </div>
+                <!-- ComboBox-->
+                <div>
+                    <label for="">País</label>
+                    <select id="country">
+                        <option id="base" value="base">Seleccione un País</option>
+                        <option id="argentina" value="Argentina">Argentina</option>
+                        <option id="chile" value="Chile">Chile</option>
+                        <option id="brasil" value="Brazil">Brasil</option>
+                        <option id="uruguay" value="Uruguay">Uruguay</option>
+                    </select>
+                    <p class="comboerror" id="countryError"></p>
+                </div>
 
-            <!-- Message-->
-            <div>
-                <label for="">Comentarios:</label><br>
-                <textarea id="comment" rows="3" cols="60"></textarea>
-                <p class="labelerror" id="commentsError"></p>
-            </div>
-            <div class="btn">
-                <button type="submit" id="submit">Enviar</button>
-            </div>
-        </form>
-        <script src="./JS/operations.js"></script>
+                <!-- Message-->
+                <div>
+                    <label for="" id="commentsError">Comentarios:</label>
+                    <textarea class="comment" id="comment" rows="3" cols="60"></textarea>
+
+                </div>
+                <div class="btn">
+                    <button type="submit" id="submit" class="submit">Enviar</button>
+                </div>
+            </form>
+            <script src="./JS/operations.js"></script>
+        </div>
     </body>
 </html>
