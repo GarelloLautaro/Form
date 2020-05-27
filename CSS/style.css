@@ -20,8 +20,6 @@
     background-color: rgb(234, 234, 234);
     border-radius: 10px 10px 10px 10px;
 }
-
-
 .return {
     width: 30%;
     border-radius: 5px 5px 5px 5px;
@@ -37,15 +35,11 @@
     background: linear-gradient(to right, rgb(158, 106, 179), rgb(69, 140, 220));
     border-radius: 5px 5px 5px 5px;
 }
-
-
 h1{
     text-align: center;
-    font-weight: 700;
+    font-weight: 700px;
 }
-
-
-.textbox {
+.textBox {
     display: flex;
     flex-direction: column;
     height: 90px;
@@ -63,94 +57,69 @@ input[type="text"] {
 input[type="text"]:hover {
     background-color: white;
 }
-.textboxerror {
+.textBoxError {
     font-size: 15px;
     color: rgb(69, 140, 220);
 }
-
-
-.radioerror{
+.multipleChoice {
+    display: flex;
+    flex-direction: column;
+}
+.radioBtns {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+}
+.radioChoices {
+    width: 200px;
+}
+.radioError {
     font-size: 16px;
     display: flex;
-    position: relative;
-    left: 150px;
-    bottom: 50px;
-    width: 342px;
-    height: 25px;
-    padding: 10px 8px 5px 5px;
-    margin: 0 0 4px 30px;
-    margin-left: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 30px;
     background-color: rgb(209, 109, 212);
 }
-.radioerror::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 355px;
-    width: 0;
-    height: 0;
-    border-top: 20px solid transparent;
-    border-right: 20px solid rgb(209, 109, 212);
-    border-bottom: 20px solid transparent;
+.checkBoxs{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
 }
-
-
-.checkederror{
+.checkBoxsChoices {
+    width: 200px;
+}
+.checkedError {
     font-size: 16px;
-    position: relative;
-    left: 150px;
-    bottom: 70px;
-    width: 342px;
-    height: 35px;
-    padding: 10px 8px 5px 5px;
-    margin: 0 0 4px 30px;
-    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 30px;
     background-color: rgb(209, 109, 212);
 }
-.checkederror::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 355px;
-    width: 0;
-    height: 0;
-    border-top: 25px solid transparent;
-    border-right: 25px solid rgb(209, 109, 212);
-    border-bottom: 25px solid transparent;
+.comboBox {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
 }
-
-
-.comboerror {
+.comboChoice {
+    width: 270px;
+}
+.comboError {
     font-size: 16px;
-    position: relative;
-    left: 212px;
-    bottom: 25px;
-    width: 280px;
-    height: 15px;
-    padding: 10px 8px 5px 5px;
-    margin: 0 0 4px 30px;
-    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 20px;
     background-color: rgb(209, 109, 212);
 }
-.comboerror::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 293px;
-    width: 0;
-    height: 0;
-    border-top: 15px solid transparent;
-    border-right: 15px solid rgb(209, 109, 212);
-    border-bottom: 15px solid transparent;
-}
-
-
 .comment {
     min-width: 100%;
     resize: none;
 }
-
-
 .submit, .refresh {
     display: flex;
     justify-content: center;
@@ -173,86 +142,55 @@ input[type="text"]:hover {
 
 @media (max-width: 580px){
 
-    body {
-        background: rgb(69, 104, 220);
-    }
-
     .wrapper {
         height: auto;
         width: auto;
     }
-
     .frm {
         height: 80%;
         width: 80%;
     }
-
-    .textboxerror{
-        left: 280px;
-    }
-
-    .radioerror, .checkederror {
-        left: 100px;
-        bottom: 50px;
-        width: 242px;
-        height: 25px;
-        
-    }
-    .radioerror::before {
-        right: 255px;
-    }
-    .checkederror::before {
-        right: 255px;
-        border-top: 20px solid transparent;
-        border-right: 20px solid rgb(209, 109, 212);
-        border-bottom: 20px solid transparent;
-    }
-
-    .comboerror {
-        left: 200px;
-        bottom: 25px;
-        width: 142px;
-        height: 15px;
-    }
-    .comboerror::before {
-        right: 155px;
-    }
-
     .comment {
         width: 100%;
     }
 }
 
-@media (max-width: 440px){
+@media (max-width: 520px){
 
     .wrapper {
         height: auto;
         width: auto;
     }
-
     .frm {
         height: 80%;
         width: 80%;
     }
-
-    .radioerror, .checkederror {
-        left: 130px;
-        bottom: 50px;
-        width: 150px;
-        height: 25px;
-        
-    }
-    .radioerror::before, .checkederror::before {
-        right: 163px;
-    }
-
     .comboerror {
-        left: 200px;
-        bottom: 25px;
-        width: 80px;
-        height: 15px;
+        width: 40%;
     }
-    .comboerror::before {
-        right: 93px;
+}
+
+@media (max-width: 440px) {
+    
+    .wrapper {
+        height: auto;
+        width: auto;
     }
+    .frm {
+        height: 80%;
+        width: 80%;
+    }
+    .radioError {
+        width: 70%;
+    }
+    .checkedError {
+        width: 70%;
+        height: 55%;
+    }
+    .comboError {
+        width: 90%;
+        height: 65%;
+    }
+
+
 }

@@ -1,6 +1,6 @@
 const form = document.getElementById("frm")
 const username = document.getElementById("name")
-const usernameError = document.getElementById("usernameError")
+const usernameError = document.getElementById("userNameError")
 const surname = document.getElementById("surname")
 const surnameError = document.getElementById("surnameError")
 const email = document.getElementById("email")
@@ -41,15 +41,27 @@ form.addEventListener("submit", e => { /* I tell the form that when it "hears" t
     let entrar = false  /* I create a Boolean variable so I can differentiate which fields do not pass the validation rules and drop only the corresponding warnings   */
 
 
-    usernameError.innerHTML = ""
+    userNameError.innerHTML = ""
     if (username.value.length < 3 || username.value.length > 30) {/* Name validation */
         warnings_user += 'El nombre no es valido'
+        entrar = true
+    } else if (username.value % 1 == 0) {
+        warnings_user += 'El NOMBRE debe estar compuesto por letras'
+        entrar = true
+    } else {
+        warnings_user += 'El NOMBRE debe estar compuesto por letras'
         entrar = true
     }
 
     surnameError.innerHTML = ""
     if (surname.value.length < 3 || surname.value.length > 30) {/* Surname validation */
         warnings_surname += 'El apellido no es valido'
+        entrar = true
+    } else if (surname.value % 1 == 0) {
+        warnings_surname += 'El APELLIDO debe estar compuesto por letras'
+        entrar = true
+    } else {
+        warnings_surname += 'El APELLIDO debe estar compuesto por letras'
         entrar = true
     }
 
