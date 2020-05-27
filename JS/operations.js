@@ -61,7 +61,12 @@ form.addEventListener("submit", e => { /* I tell the form that when it "hears" t
 
     ageError.innerHTML = ""
     if (isNaN(age.value) || age.value < 1 || age.value > 99) {/* Age validation */
-        warnings_age += 'La edad no es valida'
+        warnings_age += 'La edad debe estar entre 0 y 100'
+        entrar = true
+    } else if (age.value % 1 == 0) {
+        entrar = false
+    } else {
+        warnings_age += 'Debe ser un numero entero'
         entrar = true
     }
 
