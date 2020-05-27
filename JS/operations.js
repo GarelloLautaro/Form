@@ -63,8 +63,8 @@ form.addEventListener("submit", e => { /* I tell the form that when it "hears" t
     if (isNaN(age.value) || age.value < 1 || age.value > 99) {/* Age validation */
         warnings_age += 'La edad debe estar entre 0 y 100'
         entrar = true
-    } else if (age.value % 1 == 0) {
-        entrar = false
+    } else if (age.value % 1 == 0) {  /* Divide the number entered with 1 and analyze the rest, if it is equal to 0 it is an integer and if the result is different */
+        entrar = false                /*  from 0 the number will be decimal. */
     } else {
         warnings_age += 'Debe ser un numero entero'
         entrar = true

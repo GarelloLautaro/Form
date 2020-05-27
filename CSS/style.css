@@ -65,7 +65,7 @@ input[type="text"]:hover {
 }
 .textboxerror {
     font-size: 15px;
-    
+    color: rgb(69, 140, 220);
 }
 
 
@@ -144,7 +144,17 @@ input[type="text"]:hover {
     border-bottom: 15px solid transparent;
 }
 
-.submit {
+
+.comment {
+    min-width: 100%;
+    resize: none;
+}
+
+
+.submit, .refresh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Cabin', sans-serif;
     width: 40%;
     height: 40px;  
@@ -153,14 +163,13 @@ input[type="text"]:hover {
     border-radius: 20px 20px 20px 20px;
     float: right;
 }
-.submit:hover {
+.refresh {
+    float: left;
+}
+.submit:hover, .refresh:hover {
     cursor: pointer;
 }
 
-.comment {
-    min-width: 100%;
-    resize: none;
-}
 
 @media (max-width: 580px){
 
